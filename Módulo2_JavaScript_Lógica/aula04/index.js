@@ -5,3 +5,5 @@ if (numero >= 0 && numero <= 5) {
 } else {
     console.log ('Não');
 }
+
+// Teste
