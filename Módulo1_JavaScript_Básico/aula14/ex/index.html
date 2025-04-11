@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Aula 14</title>
+</head>
+<body>
+    
+    <script>
+        const nome = prompt('Digite seu nome completo: ');
+        const nomeLetras = nome.length - 1;
+        const segundaLetra = nome[1];
+        const firstA = nome.indexOf('a');
+        const lastA = nome.lastIndexOf('a');
+        const lastThree = nome.slice(-3, nome.length);
+        const nameWords = nome.split(' ');
+        const upperCase = nome.toUpperCase();
+        const lowerCase = nome.toLowerCase();
+
+        document.body.innerHTML += `Seu nome é: <strong>${nome}</strong> <br/>`
+        document.body.innerHTML += `Seu nome tem <strong>${nomeLetras}</strong> letras <br/>`
+        document.body.innerHTML += `A segunda letra do seu nome é: <strong>${segundaLetra}</strong> <br/>`
+        document.body.innerHTML += `Qual o primeiro índice da letra a no seu nome? <strong>${firstA}</strong><br/>`
+        document.body.innerHTML += `Qual o último índice da letra a no seu nome? <strong>${lastA}</strong><br/>`
+        document.body.innerHTML += `Quais são as últimas 3 letras do seu nome? <strong>${lastThree}</strong><br/>`
+        document.body.innerHTML += `As palavras do seu nome são: <strong>${nameWords}</strong><br/>`
+        document.body.innerHTML += `Seu nome com letras maiúsculas: <strong>${upperCase}</strong><br/>`
+        document.body.innerHTML += `Seu nome com letras minusculas: <strong>${lowerCase}</strong><br/>`
+
+        console.log(nameWords)
+    </script>
+</body>
+</html>
+
