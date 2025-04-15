@@ -30,9 +30,13 @@ body {
     justify-content: space-around;
 }
 
-#result {
+.paragrafo-resultado, .bad {
     padding: 10px;
-    background-color: oran
+    background-color: rgb(109, 255, 182);
+}
+
+.bad {
+    background: rgb(255, 150, 150);
 }
 
 form input, form label, form button {
