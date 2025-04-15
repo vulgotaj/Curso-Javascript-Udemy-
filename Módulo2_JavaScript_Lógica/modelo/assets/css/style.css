@@ -25,6 +25,16 @@ body {
     border-radius: 10px;
 }
 
+.imc-table {
+    display: flex;
+    justify-content: space-around;
+}
+
+#result {
+    padding: 10px;
+    background-color: oran
+}
+
 form input, form label, form button {
     display: block;
     width: 100%;
