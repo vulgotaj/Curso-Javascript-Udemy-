@@ -1,3 +1,15 @@
+/*
+const h1 = document.querySelector('h1');
+const data = new Date();
+const opcoes = {
+    dateStyle: 'full',
+    timeStyle: 'short'
+};
+
+h1.innerHTML = data.toLocaleString('pt-BR', opcoes);
+*/
+
+
 const data = new Date();
 const diaSemana = data.getDay();
 const dia = data.getDate();
@@ -6,94 +18,11 @@ const ano = data.getFullYear();
 const hora = data.getHours();
 const min = data.getMinutes();
 
+const diasSemana = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
+const diaSemanaTexto = diasSemana[diaSemana];
 
-let diaSemanaTexto = ''
-switch (diaSemana) {
-        case 0:
-            diaSemanaTexto = 'Domingo';
-            break;
-        
-        case 1: 
-            diaSemanaTexto = 'Segunda-Feira';
-            break;
-
-        case 2:
-            diaSemanaTexto = 'Terça-Feira';
-            break;
-            
-        case 3: 
-            diaSemanaTexto = 'Quarta-Feira';
-            break;
-    
-        case 4:
-            diaSemanaTexto = 'Quinta-Feira';
-            break;
-            
-        case 5: 
-            diaSemanaTexto = 'Sexta-Feira';
-            break;
-    
-        case 6: 
-            diaSemanaTexto = 'Sábado';
-            break;
-            
-        default:
-            diaSemanaTexto = '';
-}
-
-let mesTexto = ''
-switch (mes) {
-        case 0:
-            mesTexto = 'Janeiro';
-            break;
-
-        case 1:
-            mesTexto = 'Fevereiro';
-            break;
-
-        case 2:
-            mesTexto = 'Março';
-            break;
-
-        case 3:
-            mesTexto = 'Abril';
-            break;
-
-        case 4:
-            mesTexto = 'Maio';
-            break;
-
-        case 5:
-            mesTexto = 'Junho';
-            break;
-
-        case 6:
-            mesTexto = 'Julho';
-            break;
-
-        case 7:
-            mesTexto = 'Agosto';
-            break;
-
-        case 8:
-            mesTexto = 'Setembro';
-            break;
-
-        case 9:
-            mesTexto = 'Outubro';
-            break;
-
-        case 10:
-            mesTexto = 'Novembro';
-            break;
-
-        case 11:
-            mesTexto = 'Dezembro';
-            break;
-       
-        default:
-            mesTexto = '';
-}
+const meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+const mesTexto = meses[mes];
 
 
 console.log(diaSemanaTexto, dia, mesTexto, ano, hora, min)
