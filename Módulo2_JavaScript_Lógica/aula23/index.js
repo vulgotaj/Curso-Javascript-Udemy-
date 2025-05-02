@@ -1,3 +1,6 @@
+console.log(new Date(0))
+
+/*
 function mostraHora() {
     let data = new Date();
     
@@ -17,3 +20,4 @@ setTimeout(function() {
 setTimeout(function() {
     console.log('Olá mundo!');
 }, 5000);
+*/
